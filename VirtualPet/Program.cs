@@ -13,16 +13,20 @@ namespace VirtualPet
             //Random object for Tick Method
             Random rand = new Random();
 
+            //Pet Generator
+            Pet jenny = new Pet("Jenny the Xenomorph", 45.5, 5, "eagers");
 
+            //QuitFlag
+            bool quitFlag = false;
 
             //Main Program Logic
             do
             {
-
+                MenuWriter();
 
             }
 
-            while ()
+            while (quitFlag == false);
 
             Console.WriteLine("Have a great day!");
 
