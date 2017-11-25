@@ -90,6 +90,16 @@ namespace VirtualPet
             this.powerLevel = 5;
         }
 
+        //Status Print Method
+
+        public void StatusCheck()
+        {
+            Console.WriteLine("Name: " + this.name);
+            Console.WriteLine("Mood: " + this.mood);
+            Console.WriteLine("Weight: " + this.weight);
+            Console.WriteLine("Power Level: " + this.powerLevel);
+        }
+
 
     }
 }
