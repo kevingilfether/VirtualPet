@@ -32,5 +32,19 @@ namespace VirtualPet
             get { return this.mood; }
             set { this.mood = value; }
         }
+
+        //Methods
+        public void Bark()
+        {
+            Console.WriteLine("Arff!");
+        }
+
+        public string PlaysVidya(string newMood)
+        {
+            this.mood = newMood;
+            return this.mood;
+        }
+
+
     }
 }
