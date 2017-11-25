@@ -9,12 +9,19 @@ namespace VirtualPet
     class Pet
     {
         //fields
+        private string name;
         private double weight;
         private int powerLevel;
         private string mood;
 
 
         //Properties
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
+
         public double Weight
         {
             get { return this.weight; }
@@ -43,6 +50,13 @@ namespace VirtualPet
         {
             this.mood = newMood;
             return this.mood;
+        }
+
+        public int PowerUp (int newPowerLevel)
+        {
+            Console.WriteLine(name + " is powering up!");
+            this.powerLevel = newPowerLevel;
+            return this.powerLevel;
         }
 
 
