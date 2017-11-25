@@ -16,13 +16,20 @@ namespace VirtualPet
             //Pet Generator
             Pet jenny = new Pet("Jenny the Xenomorph", 45.5, 5, "eagers");
 
-            //QuitFlag
+            //quitFlag - if true, keep going
             bool quitFlag = false;
 
             //Main Program Logic
             do
             {
+                jenny.StatusCheck();
+                Console.WriteLine();
                 MenuWriter();
+                int userInput = int.Parse(Console.ReadLine());
+
+                if (userInput == 6)
+                    quitFlag = true;
+                
 
             }
 
