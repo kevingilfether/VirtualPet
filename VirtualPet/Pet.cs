@@ -40,6 +40,20 @@ namespace VirtualPet
             set { this.mood = value; }
         }
 
+        //Constructors
+        public Pet()
+        {
+
+        }
+
+        public Pet(string name, double weight, int powerLevel, string mood)
+        {
+            this.name = name;
+            this.weight = weight;
+            this.powerLevel = powerLevel;
+            this.mood = mood;
+        }
+
         //Methods
         public void Bark()
         {
