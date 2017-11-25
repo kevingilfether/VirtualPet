@@ -10,6 +10,9 @@ namespace VirtualPet
     {
         static void Main(string[] args)
         {
+            //Random object for Tick Method
+            Random rand = new Random();
+
 
         }
     }

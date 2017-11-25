@@ -63,14 +63,31 @@ namespace VirtualPet
         public string PlaysVidya(string newMood)
         {
             this.mood = newMood;
+            Console.WriteLine("You play some video games with " + this.name + ".");
             return this.mood;
         }
 
         public int PowerUp (int newPowerLevel)
         {
-            Console.WriteLine(name + " is powering up!");
+            Console.WriteLine(this.name + " is powering up!");
             this.powerLevel = newPowerLevel;
             return this.powerLevel;
+        }
+        
+        public double Feed()
+        {
+            Console.WriteLine("You feed " + this.name + " some delicious mint Newman-O's.");
+            this.weight = this.weight + 1.5;
+            return this.weight;
+        }
+
+        //Tick Method
+
+        public void Tick(int nextRand)
+        {
+            this.mood = "A little bored";
+            this.weight = this.weight - nextRand;
+            this.powerLevel = 5;
         }
 
 
