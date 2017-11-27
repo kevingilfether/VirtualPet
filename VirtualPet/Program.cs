@@ -51,7 +51,7 @@ namespace VirtualPet
                 MenuWriter();
                 int userInput = int.Parse(Console.ReadLine());
 
-                if (userInput == 6)
+                if (userInput == 7)
                     quitFlag = true;
                 
 
@@ -66,12 +66,15 @@ namespace VirtualPet
         }
         static void MenuWriter()
         {
+            Console.WriteLine("  ___--=--------___\n /. \\___\\____   _, \\_      /-\\\n/. .  _______     __/=====@\n\\----/  |  / \\______/      \\-/");
+            Console.WriteLine();
             Console.WriteLine("1. Check Status");
             Console.WriteLine("2. Pat head");
             Console.WriteLine("3. Play video games");
             Console.WriteLine("4. Overthrow the patriarchy");
             Console.WriteLine("5. Feed");
-            Console.WriteLine("6. Quit");
+            Console.WriteLine("6. Wait a \"tick!\"");
+            Console.WriteLine("7. Quit");
         }
     }
 }
