@@ -14,34 +14,10 @@ namespace VirtualPet
             Random rand = new Random();
 
             //Pet Generator
-            Pet jenny = new Pet("Jenny the Xenomorph", 45.5, 5, "eagers");
+            Pet jenny = new Pet("Xenny the Xenomorph", 45.5, 5, "eagers");
 
             //quitFlag - if true, keep going
             bool quitFlag = false;
-
-            //ASCII Alien - to add in
-
-//            ___--=--------___
-//        /. \___\____   _, \_      /-\
-//       /. .  _______     __/=====@
-//       \----/  |  / \______/      \-/
-//   _/         _/ o \
-//  / |    o   /  ___ \
-// / /    o\\ |  / O \ /|      __-_
-//|o|     o\\\   |  \ \ /__--o/o___-_
-//| |      \\\-_  \____  ----  o___-
-//|o|       \_ \     /\______-o\_-
-//| \       _\ \  _/ / |
-//\o \_   _/      __/ /
-// \   \-/   _       /|_
-//  \_      / |   - \  |\
-//    \____/  \ | /  \   |\
-//            | o |   | \ |
-//            | | |    \ | \
-//           / | /      \ \ \
-//         /|  \o|\--\  /  o |\--\
-//         \----------' \---------'
-
 
             //Main Program Logic
             do
