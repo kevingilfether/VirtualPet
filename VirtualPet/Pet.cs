@@ -94,6 +94,8 @@ namespace VirtualPet
 
         public void StatusCheck()
         {
+            Console.WriteLine("  ___--=--------___\n /. \\___\\____   _, \\_      /-\\\n/. .  _______     __/=====@\n\\----/  |  / \\______/      \\-/");
+            Console.WriteLine();
             Console.WriteLine("Name: " + this.name);
             Console.WriteLine("Mood: " + this.mood);
             Console.WriteLine("Weight: " + this.weight);

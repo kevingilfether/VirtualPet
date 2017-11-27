@@ -66,7 +66,6 @@ namespace VirtualPet
         }
         static void MenuWriter()
         {
-            Console.WriteLine("  ___--=--------___\n /. \\___\\____   _, \\_      /-\\\n/. .  _______     __/=====@\n\\----/  |  / \\______/      \\-/");
             Console.WriteLine();
             Console.WriteLine("1. Check Status");
             Console.WriteLine("2. Pat head");
