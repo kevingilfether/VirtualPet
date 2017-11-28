@@ -94,12 +94,22 @@ namespace VirtualPet
 
         public void StatusCheck()
         {
-            Console.WriteLine("  ___--=--------___\n /. \\___\\____   _, \\_      /-\\\n/. .  _______     __/=====@\n\\----/  |  / \\______/      \\-/");
+            XenoASCIIArt();
             Console.WriteLine();
             Console.WriteLine("Name: " + this.name);
             Console.WriteLine("Mood: " + this.mood);
             Console.WriteLine("Weight: " + this.weight);
             Console.WriteLine("Power Level: " + this.powerLevel);
+        }
+
+        private void XenoASCIIArt()
+        {
+            Console.WriteLine(@"  
+   ___--=--------___
+  /. \___\____   _, \_      /-\
+ /. .  _______     __/=====@
+ \----/  |  / \______/      \-/
+");
         }
 
 

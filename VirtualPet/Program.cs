@@ -14,7 +14,7 @@ namespace VirtualPet
             Random rand = new Random();
 
             //Pet Generator
-            Pet jenny = new Pet("Xenny the Xenomorph", 45.5, 5, "eagers");
+            Pet xenny = new Pet("Xenny the Xenomorph", 45.5, 5, "eager");
 
             //quitFlag - if true, keep going
             bool quitFlag = false;
@@ -22,13 +22,10 @@ namespace VirtualPet
             //Main Program Logic
             do
             {
-                jenny.StatusCheck();
+                xenny.StatusCheck();
                 Console.WriteLine();
                 MenuWriter();
-                int userInput = int.Parse(Console.ReadLine());
-
-                if (userInput == 7)
-                    quitFlag = true;
+                string userInput = Console.ReadLine();           
                 
 
             }
@@ -50,6 +47,23 @@ namespace VirtualPet
             Console.WriteLine("5. Feed");
             Console.WriteLine("6. Wait a \"tick!\"");
             Console.WriteLine("7. Quit");
+        }
+
+        static bool SwitchBoard(string userInput)
+        {
+            switch (userInput)
+            {
+                case "1"
+                case "7":
+                    return true;
+                    break;
+                default:
+                    Console.WriteLine("Hey, pick a valid option!");
+                    MenuWriter();
+                    string userInput2 = Console.ReadLine();
+                    SwitchBoard(userInput2);
+                    break;
+            }
         }
     }
 }
