@@ -25,8 +25,30 @@ namespace VirtualPet
                 xenny.StatusCheck();
                 Console.WriteLine();
                 MenuWriter();
-                string userInput = Console.ReadLine();           
-                
+                string userInput = Console.ReadLine();
+
+                switch (userInput)
+                {
+                    case "1":
+                        xenny.StatusCheck();
+                        break;
+                    case "2":
+                        break;
+                    case "3":
+                        break;
+                    case "4":
+                        break;
+                    case "5":
+                        break;
+                    case "6":
+                        break;
+                    case "7":
+                        quitFlag = true;
+                        break;
+                    default:
+                        break;
+                }
+
 
             }
 
@@ -49,20 +71,5 @@ namespace VirtualPet
             Console.WriteLine("7. Quit");
         }
 
-        static void SwitchBoard(string userInput)
-        {
-            switch (userInput)
-            {
-                case "7":
-                    quitFlag = true;
-                    break;
-                default:
-                    Console.WriteLine("Hey, pick a valid option!");
-                    MenuWriter();
-                    string userInput2 = Console.ReadLine();
-                    SwitchBoard(userInput2);
-                    break;
-            }
-        }
     }
 }
