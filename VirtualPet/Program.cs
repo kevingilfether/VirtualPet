@@ -49,13 +49,12 @@ namespace VirtualPet
             Console.WriteLine("7. Quit");
         }
 
-        static bool SwitchBoard(string userInput)
+        static void SwitchBoard(string userInput)
         {
             switch (userInput)
             {
-                case "1"
                 case "7":
-                    return true;
+                    quitFlag = true;
                     break;
                 default:
                     Console.WriteLine("Hey, pick a valid option!");
