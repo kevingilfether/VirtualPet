@@ -57,6 +57,7 @@ namespace VirtualPet
         //Methods
         public void Bark()
         {
+            Console.WriteLine("\a");
             Console.WriteLine("Arff!");
         }
 

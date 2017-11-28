@@ -33,14 +33,19 @@ namespace VirtualPet
                         xenny.StatusCheck();
                         break;
                     case "2":
+                        xenny.Bark();
                         break;
                     case "3":
+                        xenny.PlaysVidya("amped");
                         break;
                     case "4":
+                        xenny.PowerUp(9001);
                         break;
                     case "5":
+                        xenny.Feed();
                         break;
                     case "6":
+                        xenny.Tick(rand.Next(6));
                         break;
                     case "7":
                         quitFlag = true;
