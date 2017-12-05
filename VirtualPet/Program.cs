@@ -14,6 +14,13 @@ namespace VirtualPet
             Random rand = new Random();
 
             //Pet Generator
+            Console.WriteLine("Say hi to your new xenomorph!");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("What's your xenomorph's name?")
+
+
             Pet xenny = new Pet("Xenny the Xenomorph", 45.5, 5, "eager");
 
             //quitFlag - if true, keep going
