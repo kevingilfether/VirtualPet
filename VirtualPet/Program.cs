@@ -18,10 +18,11 @@ namespace VirtualPet
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("What's your xenomorph's name?")
+            Console.WriteLine("What's your xenomorph's name?");
+            string xennyName = Console.ReadLine();
 
 
-            Pet xenny = new Pet("Xenny the Xenomorph", 45.5, 5, "eager");
+            Pet xenny = new Pet(xennyName, 45.5, 5, "eager");
 
             //quitFlag - if true, keep going
             bool quitFlag = false;
